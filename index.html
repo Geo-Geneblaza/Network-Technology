@@ -1,57 +1,167 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Geo Geneblaza | Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo Geneblaza | E-Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #0e3d61;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+            header h1 {
+                margin-bottom: 10px;
+            }
+
+        nav {
+            background-color: #1b5583;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+            nav a {
+                color: white;
+                margin: 0 15px;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            color: #0e3d61;
+        }
+
+        .project {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+            .project img {
+                max-width: 100%;
+                border-radius: 6px;
+                margin-top: 10px;
+            }
+
+        footer {
+            background-color: #0e3d61;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .contact-info {
+            line-height: 1.8;
+        }
+
+        ul {
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Geo Geneblaza</h1>
-      <p>Student Developer | Passionate About Solving Real-World Problems</p>
-      <nav>
+
+    <header>
+        <h1>Geo Geneblaza</h1>
+        <p>Aspiring Developer | Tech Innovator | Networking Enthusiast</p>
+    </header>
+
+    <nav>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
-      </nav>
+    </nav>
+
+    <div class="container">
+
+        <section id="about">
+            <h2>👋 About Me</h2>
+            <p>Hi! I’m <strong>Geo Geneblaza</strong>, a passionate student developer who enjoys building digital solutions for real-world problems. I have a strong interest in <strong>web and mobile development</strong>, as well as a growing curiosity for <strong>computer networking</strong>. I also have <strong>basic knowledge of GitHub</strong> for version control and collaboration.</p>
+        </section>
+
+        <section id="projects">
+            <h2>📌 Projects</h2>
+
+            <div class="project">
+                <h3>🍽️ LocalBiteHub — School Food Ordering System</h3>
+                <p><strong>Description:</strong> LocalBiteHub is an online food ordering prototype built for our school. It connects students with school canteens or local food vendors, allowing them to order food efficiently online.</p>
+                <ul>
+                    <li>User registration/login</li>
+                    <li>Live menu and ordering system</li>
+                    <li>Order tracking</li>
+                    <li>Vendor dashboard</li>
+                </ul>
+                <p><strong>Tools Used:</strong> HTML, CSS, JavaScript, PHP, MySQL</p>
+                
+                <p>
+                   
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>🚍 Jeepney Tracker App — Real-Time Routing and Commute Helper</h3>
+                <p><strong>Description:</strong> This app helps commuters find jeepney routes and track them in real-time. It acts as a virtual transport guide for daily travel using jeepneys in local areas.</p>
+                <ul>
+                    <li>Live location tracking</li>
+                    <li>Route suggestions via map</li>
+                    <li>Search by landmarks or destination</li>
+                </ul>
+                <p><strong>Tools Used:</strong> Android Studio, Firebase, Google Maps API</p>
+                
+                <p>
+                    
+                </p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>🛠️ Skills</h2>
+            <ul>
+                <li><strong>Front-End:</strong> HTML, CSS, JavaScript</li>
+                <li><strong>Back-End:</strong> PHP</li>
+                <li><strong>Database:</strong> MySQL, Firebase</li>
+                <li><strong>Networking:</strong> Basic understanding of IP addressing, LAN/WAN, subnetting</li>
+                <li><strong>Tools:</strong> Git, GitHub, Visual Studio Code</li>
+                <li><strong>Design:</strong> Canva, Figma</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>📫 Contact Me</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> geo.geneblaza@email.com</p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/Geo-Geneblaza" target="_blank">github.com/Geo-Geneblaza</a></p>
+                
+            </div>
+        </section>
     </div>
-  </header>
 
-  <section id="about" class="container">
-    <h2>About Me</h2>
-    <p>I'm a student developer passionate about creating practical tech solutions. I've worked on projects that solve everyday problems, like food delivery and local transport routing.</p>
-  </section>
+    <footer>
+        <p>© 2025 Geo Geneblaza | All Rights Reserved</p>
+    </footer>
 
-  <section id="projects" class="container">
-    <h2>My Projects</h2>
-
-    <div class="project">
-      <h3>LocalBiteHub</h3>
-      <p>An online food delivery platform developed for school. It allows users to browse local menus and place orders efficiently.</p>
-    </div>
-
-    <div class="project">
-      <h3>Jeepney Routing</h3>
-      <p>A mapping and transport tool that helps users identify which jeepney routes to take in urban areas — designed to simplify daily commuting.</p>
-    </div>
-  </section>
-
-  <section id="contact" class="container">
-    <h2>Contact Me</h2>
-    <form id="contactForm">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>© 2025 Geo Geneblaza</p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
